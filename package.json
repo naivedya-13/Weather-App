@@ -1,0 +1,19 @@
+{
+  "name": "expressjs",
+  "version": "1.0.0",
+  "description": "Weather app using express js and node js using live api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naivedya-13/Weather-app.git"
+  },
+  "author": "Naivedya Tripathi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naivedya-13/Weather-app/issues"
+  },
+  "homepage": "https://github.com/naivedya-13/Weather-app#readme"
+}
