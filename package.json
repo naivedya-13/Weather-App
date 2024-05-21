@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/naivedya-13/Weather-app/issues"
   },
-  "homepage": "https://github.com/naivedya-13/Weather-app#readme"
+  "homepage": "https://github.com/naivedya-13/Weather-app#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
