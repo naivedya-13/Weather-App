@@ -5,10 +5,11 @@ const port = process.env.PORT || 8000;
 
 // Public static path
 const static_path = path.join(__dirname, "../public");
+const template_path = path.join(__dirname, "../templates");
 
 // Set view engine to hbs
 app.set("view engine", "hbs");
-app.set("views", path.join(__dirname, "../views"));
+app.set("views",template_path)
 
 // Middleware to serve static files
 app.use(express.static(static_path));
