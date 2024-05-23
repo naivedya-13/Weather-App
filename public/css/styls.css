@@ -125,10 +125,6 @@ body{
   box-shadow: 0 8px 6px -6px var(--main-color);
 }
 
-.main_header_left .text_clr {
-  color: var(--main-color);
-}
-
 .main_header_right {
   height: 70rem;
   display: flex;
@@ -138,6 +134,7 @@ body{
 }
 
 .main_header_right figure img{
+    filter: drop-shadow(0 0.5rem 1rem rgba(0,0,0,0.3));
 
 }
 
