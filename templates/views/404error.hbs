@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    {{>navbar}}
+    <!-- main header  -->
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-12 col-12 main_header_left " style="align-items: center;">
+                        <figure class="errmsg">
+                            <img src="Images/404.png" alt="about" class="img-fluid" title="weather-app">
+                        </figure>
+                        <p>Welcome to Naivedya's Website</p>
+                        <h1>{{errorMsg}}</h1>
+                        <a href="/" target="_blank"><button>Go Back</button></a>
+
+                    </div>
+                    <!-- right side div  -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer code  -->
+    {{>footer}}
+</body>
+
+</html>

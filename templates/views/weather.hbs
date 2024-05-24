@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    <div class="container-fluid main_menu">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <nav class="navbar navbar-expand-lg ">
+                    <a class="navbar-brand" href="#"><i class="fas fa-snowflake" aria-hidden="true"></i> Weather-App <i
+                            class="fas fa-snowflake" aria-hidden="true"></i> </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/">Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/weather">Weather</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About Us</a>
+                            </li>
+                        </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- main header  -->
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form  class="temp_form">
+                        <input type="text" id="cityname" placeholder="Enter Your City Name" autocomplete="off">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+                <div class="tempInformation">
+                    <div class="top_layer">
+                        <p id="day">Tuesday</p>
+                        <p id="today_date">23 May</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">Your Output</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span>0</span><sup>o</sup>C</p>
+                            <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer code  -->
+    {{>footer}}
+    <script src="js/main.js"></script>
+    <script>
+        const dayElement = document.getElementById('day');
+const dateElement = document.getElementById('today_date');
+
+const getCurrentDay = () => {
+    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const currentTime = new Date();
+    return weekday[currentTime.getDay()];
+}
+
+const getCurrentDate = () => {
+    const months = [
+        "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    ];
+    const now = new Date();
+    const month = months[now.getMonth()];
+    const date = now.getDate();
+    return `${month} ${date}`;
+}
+
+const updateDateTime = () => {
+    dayElement.innerText = getCurrentDay();
+    dateElement.innerText = getCurrentDate();
+}
+
+// Initialize date and time on page load
+updateDateTime();
+
+    </script>
+</body>
+
+</html>
