@@ -42,7 +42,7 @@ This weather app allows users to enter a city name and get the current weather i
 
 2. Open your web browser and go to:
     ```
-    http://localhost:3000
+    http://localhost:8000
     ```
 
 3. Enter the name of a city in the input field and click the "Search" button to get the current weather information.
