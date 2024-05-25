@@ -10,7 +10,6 @@ A weather application built using Express.js and Node.js, utilizing a live weath
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
@@ -37,7 +36,7 @@ This weather app allows users to enter a city name and get the current weather i
 
 1. Start the server:
     ```sh
-    node index.js
+    node src/app.js
     ```
 
 2. Open your web browser and go to:
@@ -70,16 +69,14 @@ Contributions are welcome! If you have any ideas or suggestions to improve the a
 4. Push to the branch (`git push origin feature/new-feature`)
 5. Open a pull request
 
-## License
 
-This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for more details.
 
 ## Author
 
 **Naivedya Tripathi**
 
 - [GitHub](https://github.com/naivedya-13)
-- [LinkedIn](https://www.linkedin.com/in/naivedya-tripathi/)
+- [LinkedIn](www.linkedin.com/in/naivedya-tripathi-29a960250)
 
 ## Bugs and Issues
 
